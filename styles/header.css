@@ -1,0 +1,46 @@
+/* float 切 頁首 */
+header {
+  height: 60px;
+  border: 2px solid black;
+}
+
+.logo {
+  height: 100%;
+  float: left;
+}
+
+.btns {
+  float: right;
+  line-height: 60px;
+}
+
+nav {
+  line-height: 60px;
+  text-align: center;
+}
+
+.box {
+  height: 60px;
+  border: 2px solid black;
+
+  /* 設定成彈性盒子 */
+  display: flex;
+
+  /* 設定主軸 */
+  flex-direction: row;
+
+  /* 主軸對齊方式 */
+  justify-content: space-between;
+
+  /* 換行的設定 */
+  flex-wrap: wrap;
+
+  /* 切軸對齊方式 */
+  align-items: center;
+}
+
+.items {
+  width: 100px;
+  /* height: 60px; */
+  background-color: lightblue;
+}

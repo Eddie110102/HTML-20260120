@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS 權重 - CSS weight</title>
+    <style>
+      * {
+        color: yellow;
+      }
+      h2 {
+        color: red;
+      }
+
+      h2.font1.font3 {
+        color: blue;
+        font-size: 30px;
+      }
+
+      .font3.font1 {
+        color: purple;
+        font-style: italic;
+      }
+
+      
+      #font2 {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 class="font3 font1">CSS權重</h2>
+    <!-- 藍 -->
+    <h2 class="font1" id="font2">CSS權重</h2>
+    <!-- 綠 -->
+    <h2 id="font2" style="color: pink">CSS權重</h2>
+    <!-- 粉 -->
+    <h2>CSS權重</h2>
+    <!-- 紅 -->
+  </body>
+</html>

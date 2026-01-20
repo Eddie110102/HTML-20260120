@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>方塊模型 - box model</title>
+    <link rel="stylesheet" href="./styles/box-model.css" />
+  </head>
+  <body>
+    <h2>圖片元素</h2>
+    <img src="./images/pikachu.jpg" alt="" />
+    <img src="./images/Charizard.jpg" alt="" />
+    <img src="./images/pikachu.jpg" alt="" class="border-box" />
+    <img src="./images/pikachu.jpg" alt="" />
+
+    <hr />
+
+    <div class="imgBox">
+      <img src="./images/pikachu.jpg" alt="" />
+      <img src="./images/Charizard.jpg" alt="" />
+      <img src="./images/pikachu.jpg" alt="" class="border-box" />
+      <img src="./images/pikachu.jpg" alt="" />
+    </div>
+
+    <h2>邊框圓角</h2>
+    <div class="circle"></div>
+    <br />
+    <div class="capsule"></div>
+    <br />
+
+    <hr />
+    <h2>區塊元素</h2>
+    <div class="box">一般文字</div>
+    <div class="box">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae,
+      ducimus fuga magni quisquam a esse sequi fugit unde facilis? Aliquam
+      maiores magni minima. Consectetur laudantium quia quasi voluptatibus
+      minima impedit!
+    </div>
+    <div class="box"></div>
+    <div class="box"></div>
+
+    <hr />
+    <h2 style="margin-bottom: 50px;">行內元素</h2>
+    <span class="box"></span>
+    <span class="box"></span>
+    <span class="box"></span>
+    <span class="box"></span>
+
+    <div class="container">
+      <span class="box">1</span>
+      <span class="box">2</span>
+      <span class="box">3</span>
+      <span class="box">4</span>
+    </div>
+  </body>
+</html>

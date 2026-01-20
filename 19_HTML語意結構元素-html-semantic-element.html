@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML5 語意結構元素 - HTML5 Semantic Layout Section</title>
+  </head>
+  <body>
+    <div class="header">
+      <div>logo</div>
+      <div class="nav">nav</div>
+      <div>btns</div>
+    </div>
+    <div class="main">主要資訊</div>
+    <div class="aside">次要資訊</div>
+    <div class="footer">版權、隱私權、連結、服務</div>
+
+    <hr />
+
+    <header>
+      <div>logo</div>
+      <nav>nav</nav>
+      <div>btns</div>
+    </header>
+    <div style="display: flex;">
+      <main style="border: 2px solid black; height: 800px; width: 60%;">主要資訊
+        <section>1
+          <article>1</article>
+          <article>2</article>
+          <article>3</article>
+        </section>
+        <section>2</section>
+        <section>3</section>
+      </main>
+      <aside style="border: 2px solid red; height: 800px; width: 40%;">次要資訊</aside>
+    </div>
+    <footer>版權、隱私權、連結、服務</footer>
+  </body>
+</html>

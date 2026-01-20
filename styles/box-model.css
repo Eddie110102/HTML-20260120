@@ -1,0 +1,77 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+img,
+.box {
+  /* 內容 */
+  width: 200px;
+  height: 200px;
+  background-color: pink;
+
+  /* 邊框 */
+  border: 5px solid red;
+  /* border-top: 5px solid red; */
+
+  /* 內邊距 */
+  padding: 30px;
+  /* padding: 30px 60px; */
+  /* padding: 30px 60px 120px; */
+  /* padding: 30px 60px 120px 240px; */
+  /* padding-top: 30px; */
+
+  /* 外邊距 */
+  /* margin: 50px; */
+  margin: 50px auto;
+  /* margin-bottom: 50px; */
+}
+
+.circle {
+  border: 5px solid black;
+  width: 100px;
+  height: 100px;
+
+  /* 圓形 */
+  border-radius: 50%;
+}
+
+.capsule {
+  border: 5px solid black;
+  width: 100px;
+  height: 50px;
+
+  border-radius: 30px;
+}
+
+
+.border-box{
+  box-sizing: border-box;
+}
+
+.container{
+  text-align: center;
+}
+
+
+/* 刪除半形空白 */
+.imgBox{
+  font-size: 0;
+}
+
+.imgBox p{
+  font-size: 16px;
+}
+
+.box2{
+  border: 5px solid red;
+}
+
+
+.container{
+  font-size: 0;
+}
+
+.container .box{
+  font-size: initial;
+}

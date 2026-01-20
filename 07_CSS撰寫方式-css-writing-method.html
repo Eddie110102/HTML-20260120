@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS 撰寫方式</title>
+    <!-- 外掛樣式表 ： 使用link元素關聯檔案 -->
+    <link rel="stylesheet" href="外掛樣式表的相對路徑">
+
+    <!-- 內部樣式表 ： 使用 style元素，搭配CSS選擇器 -->
+    <style>
+      /* 註解/反註解： ctrl + ? */
+
+      /* 選擇器 {
+        CSS屬性: CSS屬性值;
+        CSS屬性: CSS屬性值;
+        CSS屬性: CSS屬性值;
+        CSS屬性: CSS屬性值;
+      } */
+
+      /* 標籤選擇器 */
+      h3 {
+        color: green;
+      }
+      h4 {
+        color: green;
+      }
+      h3,
+      h4,
+      h5,
+      h6 {
+        color: navy;
+      }
+      p {
+        color: salmon;
+      }
+
+      /* 類別選擇器 class */
+      .orange {
+        color: orange;
+      }
+
+      /* 指定方法  */
+
+      /* 
+      全部連在一起 ： 第一個選擇器第二個選擇器
+        設定同一個元素的條件 
+      */
+      /* <h4 class="yellowgreen"></h4> */
+      h4.yellowgreen {
+        color: yellowgreen;
+        font-size: 30px;
+        font-weight: normal;
+      }
+
+      /* 
+      中間有一個空白 ： 第一個選擇器 第二個選擇器
+        第一個選擇器是設定父層(或是外層)的條件
+        第二個選擇器是設定指定元素的條件
+        以上條件有符合，指定元素就會套用樣式 
+      */
+      /*
+        <h4>
+          ... (可以有很多層)
+          <element class="yellowgreen"></element>
+        </h4>
+      */
+      h4 .yellowgreen {
+        color: lightblue;
+        font-size: 50px;
+      }
+
+      /* 
+      中間加上一個 > 符號 ： 第一個選擇器 > 第二個選擇器
+        第一個選擇器是一定是父層的條件
+        第二個選擇器是子層的的條件
+        以上條件有符合，子層就會套用樣式 
+      */
+      /* 
+        <h4>
+          <element class="yellowgreen"></element>
+        </h4>
+      */
+      h4 > .yellowgreen {
+        color: purple;
+        font-size: 50px;
+      }
+
+      .lightblue {
+        color: lightblue;
+      }
+
+      .fz30 {
+        font-size: 30px;
+      }
+
+      .fwb {
+        font-weight: bold;
+      }
+
+      /* ID 選擇器 */
+      /* 
+        #id屬性值 {
+          CSS屬性名稱: CSS屬性值;
+          CSS屬性名稱: CSS屬性值;
+          CSS屬性名稱: CSS屬性值;
+        }
+      */
+
+      #theH1 {
+        color: navy;
+        font-size: 100px;
+        font-style: italic;
+      }
+
+      * {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 行內樣式 ： 使用html的style屬性，寫在元素身上 -->
+    <h2 style="color: red">標題元素</h2>
+    <h2 style="color: blue">標題元素</h2>
+
+    <!-- 內部樣式表 -->
+    <h3 class="orange">標題元素-1</h3>
+    <h3 class="yellowgreen">標題元素-2</h3>
+
+    <h4 class="yellowgreen">108行 h4元素 + .yellowgreen</h4>
+    <h4>109行 h4元素</h4>
+    <p class="yellowgreen">110行 p元素 + .yellowgreen</p>
+    <h4>
+      112行 外層 h4元素
+      <span>113行 第一層 span元素</span>
+      <span class="yellowgreen">114行 第一層 span元素 + .yellowgreen </span>
+      <span
+        >116行 第一層 span元素
+        <span class="yellowgreen">117行 第二層 span元素 + .yellowgreen </span>
+      </span>
+    </h4>
+
+    <hr />
+
+    <div class="fwb lightblue fz30">區塊容器</div>
+
+    <hr />
+
+    <h1 id="theH1">h1標題元素</h1>
+    <h2 id="theH2">h2標題元素</h2>
+
+    <script>
+      const theH1 = document.querySelector("#theH1");
+      theH1.style.color = "red";
+    </script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+form {
+  width: 450px;
+}
+
+fieldset {
+  border: 2px solid navy;
+  border-radius: 20px;
+}
+
+fieldset > .q1:last-child {
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+
+legend {
+  margin: 0 10px;
+}
+
+.q1 {
+  /* width: 450px; */
+  border-bottom: 2px dashed gray;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.t1 {
+  float: left;
+  width: 100px;
+  text-align-last: justify;
+  margin-right: 8px;
+}
+
+.btns {
+  /* width: 450px; */
+  text-align: center;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>顯示設定 - display & visibility & overflow</title>
+    <style>
+      h2 {
+        /* 空間&內容都隱藏 */
+        /* display: none; */
+
+        /* 隱藏內容，保留空間 */
+        visibility: hidden;
+      }
+
+      .box{
+        width: 200px;
+        height: 200px;
+        border:5px solid red;
+
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- display & visibility 設定差異 -->
+    <h1>h1元素</h1>
+    <h2>h2元素</h2>
+    <h3>h3元素</h3>
+
+    <hr />
+
+    <!-- overflow 設定 -->
+    <div class="box">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, sapiente. Culpa fuga in, magni ipsum tempore temporibus libero ab, inventore error atque veritatis, nam dolor doloribus exercitationem quod vero tempora.
+      Aspernatur possimus repellat laboriosam rem cumque dolor error enim exercitationem harum beatae laborum nesciunt, repudiandae dignissimos iusto iste eaque! Doloremque sed ipsa beatae ut dolor ab, eligendi voluptates iste? Molestiae.
+      Necessitatibus, repellendus? Voluptates error natus, deleniti, quod cum corporis quia nemo autem aliquid amet et dicta atque quo. Nemo quasi, quibusdam similique quisquam ab sint tempora quae natus obcaecati quos.
+      Nostrum illum sit earum laudantium aliquam, impedit dicta? Quae dicta at, atque maxime numquam voluptas odio libero dolorem ipsa dolores eveniet laboriosam porro praesentium illum sit, corporis doloribus harum tempora.
+      Quaerat excepturi, aliquam quos ipsam, laudantium consequatur in temporibus labore ad eveniet consequuntur? Cupiditate ipsam explicabo maxime eos! Praesentium laudantium iste sint qui accusantium quae rem veniam aperiam sit ea!</p>
+    </div>
+  </body>
+</html>

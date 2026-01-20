@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>清單樣式 - list css</title>
+    <link rel="stylesheet" href="./styles/list.css">
+  </head>
+  <body>
+    <a href="./01_HTML文件結構-skeleton.html">01_HTML文件結構-skeleton</a>
+    <a href="./02_文字元素-text.html">02_文字元素-text</a>
+    <a href="./03_區塊行內元素-blockVSinline.html"
+      >03_區塊行內元素-blockVSinline</a
+    >
+    <a href="./04_圖片元素-image.html">04_圖片元素-image</a>
+    <a href="./05_清單元素-list.html">05_清單元素-list</a>
+    <a href="./06_超連結元素-anchor.html">06_超連結元素-anchor</a>
+    <hr />
+    <h2>項目清單(無順序)</h2>
+
+    <ul class="list">
+      <li class="list-item">單一項目內容1</li>
+      <li>單一項目內容2</li>
+      <li>單一項目內容3</li>
+    </ul>
+
+    <hr />
+
+    <h2>序號清單(有順序)</h2>
+
+    <!-- Emmet： ol>li*3  -->
+    <!-- <ol>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ol> -->
+
+    <!-- Emmet： ol>li{單一項目內容$}*3 -->
+    <ol>
+      <li>單一項目內容1</li>
+      <li>單一項目內容2</li>
+      <li>單一項目內容3</li>
+    </ol>
+
+    <h2>巢狀清單</h2>
+
+    <ol>
+      <li>單一項目內容1</li>
+      <li>
+        單一項目內容2
+        <ol>
+          <li>子層單一項目內容2-1</li>
+          <li>子層單一項目內容2-2</li>
+          <li>子層單一項目內容2-3</li>
+          <li>
+            子層單一項目內容2-4
+            <ul>
+              <li>孫層單一項目內容2-4-1</li>
+              <li>孫層單一項目內容2-4-2</li>
+              <li>孫層單一項目內容2-4-3</li>
+            </ul>
+          </li>
+          <li>子層單一項目內容2-5</li>
+        </ol>
+      </li>
+      <li>單一項目內容3</li>
+    </ol>
+
+    <h2>定義清單</h2>
+
+    <dl>
+      <dt>特殊名詞</dt>
+      <dd>補充說明/解釋</dd>
+      <dt>特殊名詞</dt>
+      <dd>補充說明/解釋</dd>
+      <dd>補充說明/解釋</dd>
+      <dd>補充說明/解釋</dd>
+      <dd>補充說明/解釋</dd>
+      <dd>補充說明/解釋</dd>
+      <dt>特殊名詞</dt>
+      <dd>
+        <ol>
+          <li>補充說明/解釋-1</li>
+          <li>補充說明/解釋-2</li>
+          <li>補充說明/解釋-3</li>
+          <li>補充說明/解釋-4</li>
+        </ol>
+      </dd>
+      <dt>特殊名詞</dt>
+      <dd>補充說明/解釋</dd>
+    </dl>
+  </body>
+</html>

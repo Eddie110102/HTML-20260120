@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>表格元素</title>
+    <link rel="stylesheet" href="./styles/table.css" />
+  </head>
+  <body>
+    <table>
+      <!-- 表格大標題（選填） -->
+      <caption>
+        <h2>表格大標題</h2>
+      </caption>
+      <!-- 表格標題 -->
+      <thead>
+        <tr>
+          <th rowspan="2">標題儲存格01</th>
+          <th colspan="2">標題儲存格02</th>
+          <!-- <th>標題儲存格03</th> -->
+          <th colspan="2">標題儲存格04</th>
+          <!-- <th>標題儲存格05</th> -->
+          <th rowspan="2">標題儲存格06</th>
+          <th rowspan="2">標題儲存格07</th>
+        </tr>
+        <tr>
+          <!-- <th>標題儲存格08</th> -->
+          <th>標題儲存格09</th>
+          <th>標題儲存格10</th>
+          <th>標題儲存格11</th>
+          <th>標題儲存格12</th>
+          <!-- <th>標題儲存格13</th> -->
+          <!-- <th>標題儲存格14</th> -->
+        </tr>
+      </thead>
+      <!-- 表格內容 -->
+      <tbody id="body">
+        <tr>
+          <td>一般儲存格01</td>
+          <td>一般儲存格02</td>
+          <td>一般儲存格03</td>
+          <td>一般儲存格04</td>
+          <td>一般儲存格05</td>
+          <td>一般儲存格06</td>
+          <td>一般儲存格07</td>
+        </tr>
+        <tr>
+          <td>一般儲存格08</td>
+          <td>一般儲存格09</td>
+          <td>一般儲存格10</td>
+          <td rowspan="2" colspan="2">一般儲存格11</td>
+          <!-- <td>一般儲存格12</td> -->
+          <td>一般儲存格13</td>
+          <td>一般儲存格14</td>
+        </tr>
+        <tr>
+          <td>一般儲存格15</td>
+          <td>一般儲存格16</td>
+          <td>一般儲存格17</td>
+          <!-- <td>一般儲存格18</td> -->
+          <!-- <td>一般儲存格19</td> -->
+          <td>一般儲存格20</td>
+          <td>一般儲存格21</td>
+        </tr>
+        <tr>
+          <td>一般儲存格22</td>
+          <td>一般儲存格23</td>
+          <td>一般儲存格24</td>
+          <td>一般儲存格25</td>
+          <td>一般儲存格26</td>
+          <td>一般儲存格27</td>
+          <td>一般儲存格28</td>
+        </tr>
+      </tbody>
+      <!-- 表格註腳 -->
+      <!-- <tfoot>
+        <tr>
+          <td></td>...
+        </tr>
+      </tfoot> -->
+    </table>
+    <hr />
+    <button id="getData">取得資料</button>
+    <script src="./scripts/table.js"></script>
+  </body>
+</html>

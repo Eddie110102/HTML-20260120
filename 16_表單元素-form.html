@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>表單元素 - form</title>
+    <link rel="stylesheet" href="./styles/form.css" />
+  </head>
+  <body>
+    <form action="#" method="get" enctype="multipart/form-data">
+      <fieldset>
+        <legend>基本資料（一）</legend>
+        <div class="q1">
+          <!-- 單行文字 -->
+          <label for="myName" class="t1">姓名</label>
+          <input
+            type="text"
+            id="myName"
+            name="userName"
+            value="王曉明"
+            placeholder="請輸入您的中文姓名"
+            autocomplete="off"
+          />
+        </div>
+
+        <div class="q1">
+          <!-- 密碼 -->
+          <label for="myPassword" class="t1">密碼</label>
+          <input
+            type="password"
+            id="myPassword"
+            name="userPassword"
+            value="1234"
+            placeholder="請輸入4-6位數的密碼"
+            maxlength="6"
+            minlength="4"
+            autofocus
+          />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>基本資料（二）</legend>
+        <!-- 單選題 -->
+        <div class="q1">
+          <span class="t1">性別</span>
+          <label
+            ><input
+              type="radio"
+              name="userGender"
+              value="男性"
+              checked
+            />男性</label
+          >
+          <label
+            ><input type="radio" name="userGender" value="女性" />女性</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="userGender"
+              value="不提供"
+            />不提供</label
+          >
+        </div>
+
+        <!-- 多選題 -->
+        <div class="q1">
+          <span class="t1">多選題</span>
+          <label
+            ><input
+              type="checkbox"
+              name="userCheckbox"
+              value="選項1"
+            />選項1</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="userCheckbox"
+              value="選項2"
+              checked
+            />選項2</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="userCheckbox"
+              value="選項3"
+              checked
+            />選項3</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="userCheckbox"
+              value="選項4"
+            />選項4</label
+          >
+        </div>
+
+        <!-- 下拉式選單 -->
+        <div class="q1">
+          <label for="mySelect" class="t1">下拉式選單</label>
+          <!-- <select name="userSelect" id="mySelect" multiple size="10"> -->
+          <select name="userSelect" id="mySelect">
+            <option value="default" hidden>請選擇</option>
+            <option value="1">選項1</option>
+            <option value="2">選項2</option>
+            <option value="3">選項3</option>
+            <option value="4">選項4</option>
+            <option value="5">選項5</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>其他</legend>
+        <div class="q1">
+          <!-- 多行文字 -->
+          <label for="myMemo" class="t1">備忘錄</label>
+          <textarea id="myMemo" name="userMemo" cols="30" rows="10" readonly>
+預設文字</textarea
+          >
+        </div>
+
+        <!-- 檔案上傳 -->
+        <div class="q1">
+          <label for="myFile" class="t1">檔案上傳</label>
+          <input type="file" id="myFile" name="userFile" multiple />
+        </div>
+      </fieldset>
+
+      <div class="btns">
+        <!-- 按鈕 -->
+        <input type="submit" value="送出" />
+        <input type="reset" />
+        <input type="button" value="一般按鈕" />
+        <button type="button" disabled>一般按鈕</button>
+      </div>
+    </form>
+  </body>
+</html>
